@@ -23,8 +23,7 @@
 
     <div class="container" style="margin-top:25px">
 
-
-      <div class="row">
+      <div *ngIf="songs!=null" class="row">
         <div *ngIf="songs.resultCount==0; else showSongs">
           <h5 id="message">No hay resultados</h5>
         </div>

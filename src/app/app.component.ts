@@ -13,6 +13,7 @@ export class AppComponent {
   favourites = [];
 
   constructor(private itunesService: ItunesService){
+    this.songs=null;
   }
 
   isFavourite(songId){
