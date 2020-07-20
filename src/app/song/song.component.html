@@ -1,0 +1,16 @@
+<div>
+    <img class="card-img-top" [src]="imageSrc" style="max-height:270px">
+    <div class="card-body container-heart" style="min-height:200px">
+        <h5 class="card-title">{{ songName }}</h5>
+        <p class="card-text">{{ albumName }}</p>
+        <div class="btn-holder">
+            <button id="search" (click)="setFavourite()">
+                <i *ngIf="favourite; else showDos" class="fas fa-heart" style="color:#77B3C8"></i>
+            </button>
+
+            <ng-template #showDos>
+                <i class="far fa-heart" style="color:#77B3C8"></i>
+            </ng-template>
+        </div>
+    </div>
+</div>

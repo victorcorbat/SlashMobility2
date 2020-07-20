@@ -1,45 +1,18 @@
-  #search{
+#search{
     background-color:transparent;
     border:0px;
   }
 
-  #message{
-    margin-top:30%;
-  }
+  input[type="button"]{
+    outline:none;
+ }
+ input[type="button"]::-moz-focus-inner {
+    border: 0;
+ }
 
-  .container-number{
-    position: relative;
-  }
-
-  .top-right {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    color:white;
-    font-weight:bold;
-    background-color:#BDBEBD;
-    border-radius:50%;
-    font-size:0.5em;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    padding-left:22%;
-    padding-right:22%;
-    padding-top:10%;
-  }
-
-  #search:hover{
-    background-color:transparent;
-    border:0px;
-  }
-
-  .navbar {
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 5;
-  }
+ *:focus {
+  outline: 0 !important;
+}
 
   .container-heart {
     justify-content: space-between;
@@ -131,9 +104,6 @@ form.example::after {
       padding-top:0;
       margin-bottom:10%!important;
     }
-    #main {
-      margin-top:25%
-    }
   }
 
   @media screen and (min-width: 500px) { /*ordenador*/
@@ -142,8 +112,5 @@ form.example::after {
     }
     #logo{
       margin-right:5%;
-    }
-    #main {
-      margin-top:5%
     }
   }
